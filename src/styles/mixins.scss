@@ -5,3 +5,16 @@
     justify-content: center;
     align-items: center;
 }
+@mixin btn{
+    padding: 10px;
+    background-color: $bg-btn;
+    border: 2px solid white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
