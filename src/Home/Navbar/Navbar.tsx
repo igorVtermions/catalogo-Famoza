@@ -1,10 +1,11 @@
 import logo from "../../assets/logo.png";
 import Lupa from "../../assets/lupa.png";
 import Caixa from "../../assets/caixa.png";
+import "./styles.scss"
 
 export function Navbar() {
   return (
-    <>
+    <div className="nav">
       <div className="header">
         <a href="#" className="logo">
           <img src={logo} alt="Logo da Famoza Uniformes" className="logoImg" />
@@ -21,6 +22,6 @@ export function Navbar() {
           <img src={Caixa} alt="caixa" /> Meus Produtos
         </a>
       </div>
-    </>
+    </div>
   );
 }
