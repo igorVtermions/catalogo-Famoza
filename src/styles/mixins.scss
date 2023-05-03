@@ -18,3 +18,10 @@
     text-decoration: none;
 }
 
+@mixin hoverBtn{
+    border:2px solid $bg-btn;
+    background-color: $bg-color;
+    color: $bg-btn;
+
+}
+
