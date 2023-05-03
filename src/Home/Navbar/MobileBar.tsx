@@ -1,14 +1,18 @@
-import logo from "../../assets/logo.png";
-import Lupa from "../../assets/lupa.png";
-import Caixa from "../../assets/caixa.png";
-import "./styles.scss";
+import "./styles.scss"
+import {useState} from "react"
+import ReactModal from "react-modal"
+import Logo from "../../assets/logo.png"
+import Lupa from "../../assets/lupa.png"
+import Caixa from "../../assets/caixa.png"
 
-export function Navbar() {
-  return (
-    <div className="nav">
+export function MobileNav (){
+    const [modalIsOpen, setModalIsOpen] = useState(false)
+
+    return(
+        <div className="mobileNav">
       <div className="header">
         <a href="#" className="logo">
-          <img src={logo} alt="Logo da Famoza Uniformes" className="logoImg" />
+          <img src={Logo} alt="Logo da Famoza Uniformes" className="logoImg" />
         </a>
 
         <div className="containerSearch">
@@ -23,5 +27,5 @@ export function Navbar() {
         </a>
       </div>
     </div>
-  );
+    )
 }
