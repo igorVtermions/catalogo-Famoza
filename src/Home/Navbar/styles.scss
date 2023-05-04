@@ -3,6 +3,7 @@
 
 //Navbar//
 .nav {
+
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   width: 100%;
@@ -60,6 +61,25 @@
 
 //Mobile Navbar//
 
-@media(min-width: 768px){
-  
+.mobileNav {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  width: 100%;
+  display: none;
+  .mobileHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+    .logoMobile img{
+        width: 8%;
+    }
+  }
+}
+
+@media(max-width: 768px){
+  .mobileNav{
+    display: block;
+  }
 }

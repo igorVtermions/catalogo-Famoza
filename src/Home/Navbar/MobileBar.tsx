@@ -10,22 +10,12 @@ export function MobileNav (){
 
     return(
         <div className="mobileNav">
-      <div className="header">
-        <a href="#" className="logo">
-          <img src={Logo} alt="Logo da Famoza Uniformes" className="logoImg" />
-        </a>
-
-        <div className="containerSearch">
-          <input type="search" className="search" />
-          <button className="magn">
-            <img src={Lupa} alt="lupa" className="magnImg" />
-          </button>
-        </div>
-
-        <a href="" className="itens">
-          <img src={Caixa} alt="caixa" /> Meus Produtos
-        </a>
-      </div>
+          <div className="mobileHeader">
+            <a href="#" className="logoMobile">
+                <img src={Logo} alt="Logo da Famoza Uniformes" />
+            </a>
+            
+          </div>
     </div>
     )
 }
